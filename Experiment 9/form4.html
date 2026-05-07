@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration Form</title>
+
+<style>
+
+body{
+background-color: lightblue;
+font-family: Arial;
+}
+
+.form-box{
+width:400px;
+margin:auto;
+background:white;
+padding:20px;
+border-radius:8px;
+}
+
+h2{
+text-align:center;
+}
+
+input, select, textarea{
+width:100%;
+padding:6px;
+margin-top:5px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="form-box">
+
+<h2>Registration Form</h2>
+
+<form action="submit.html">
+
+<label>First Name</label>
+<input type="text" required>
+
+<label>Middle Name</label>
+<input type="text" required>
+
+<label>Last Name</label>
+<input type="text" required>
+
+<label>Gender</label><br>
+<input type="radio" name="gender" required> Male
+<input type="radio" name="gender"> Female
+<input type="radio" name="gender"> Other
+<br><br>
+
+<label>Address</label>
+<textarea rows="3" required></textarea>
+
+<label style="color: red;">College Name</label>
+
+<select required>
+  <option value="" disabled selected>Select College</option>
+  <option>D Y Patil College of Engineering and Technology</option>
+  <option>MIT College</option>
+  <option>COEP</option>
+  <option>VIT Pune</option>
+</select>
+
+<label>Branch</label>
+<select required>
+<option value="" disabled selected>Select Branch</option>
+<option>CSE</option>
+<option>AI ML</option>
+<option>DS</option>
+<option>ENTC</option>
+<option>MECHANICAL</option>
+<option>CIVIL</option>
+</select>
+
+<label>Year</label>
+<select required>
+<option value="" disabled selected>Select Year</option>
+<option>F.Y</option>
+<option>S.Y</option>
+<option>T.Y</option>
+<option>B.Tech</option>
+</select>
+
+<br><br>
+<label style="color: red;"> Technology</label>
+<input type="checkbox" required> HTML
+<input type="checkbox"> CSS
+<input type="checkbox"> JS
+<input type="checkbox"> NEXT.JS
+
+<br><br>
+
+<input type="submit" value="Submit">
+
+</form>
+
+</div>
+
+</body>
+</html>
